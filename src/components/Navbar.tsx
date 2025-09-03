@@ -18,10 +18,15 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-primary">
-          Sanitizing Sonata
+        <Link to="/" className="flex items-center space-x-3 text-2xl font-bold text-primary">
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="h-10 w-10 object-contain"
+            style={{ display: 'inline-block' }}
+          />
+          <span>Sanitizing Sonata</span>
         </Link>
-
         {/* Navigation Links */}
         <div className="hidden md:flex items-center space-x-8">
           <Link
@@ -31,6 +36,14 @@ export const Navbar = () => {
             }`}
           >
             Home
+          </Link>
+          <Link
+            to="/about"
+            className={`transition-colors ${
+              isActive('/about') ? 'text-primary' : 'text-foreground hover:text-primary'
+            }`}
+          >
+            About
           </Link>
           {isAuthenticated && (
             <Link

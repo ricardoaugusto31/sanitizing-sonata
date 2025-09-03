@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 0 0% 11.8%;
     --popover-foreground: 0 0% 89.8%;
 
-    --primary: 280 100% 50%; /* #A020F0 - electric purple */
+    --primary: 178 89% 40%; /* #0cc4be */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 53.3%; /* #888888 - subtle text */
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 0 0% 11.8%;
     --muted-foreground: 0 0% 53.3%; /* #888888 - subtle text */
 
-    --accent: 280 100% 69.8%; /* #C15EFF - accent hover */
+    --accent: 178 89% 40%; /* #0cc4be */
     --accent-foreground: 0 0% 6.7%;
 
     --destructive: 0 84.2% 60.2%;
@@ -35,13 +35,13 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 280 100% 50%;
+    --ring: 178 89% 40%;
 
     --radius: 0.5rem;
 
     /* Gradients and special effects */
-    --gradient-hero: linear-gradient(135deg, hsl(280 100% 50% / 0.8), hsl(280 100% 30% / 0.9));
-    --shadow-glow: 0 0 30px hsl(280 100% 50% / 0.3);
+    --gradient-hero: linear-gradient(135deg, hsl(178 89% 40% / 0.8), hsl(178 89% 20% / 0.9));
+    --shadow-glow: 0 0 30px hsl(178 89% 40% / 0.3);
     --shadow-card: 0 10px 25px hsl(0 0% 0% / 0.5);
   }
 }
