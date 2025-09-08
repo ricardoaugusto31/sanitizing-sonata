@@ -25,10 +25,10 @@ export const ConcertCard = ({ concert, index = 0 }: ConcertCardProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}
       whileHover={{ scale: 1.03 }}
-      className="group"
+      className="group h-full flex flex-col"
     >
-      <Link to={`/concert/${concert.id}`}>
-        <div className="bg-card rounded-lg overflow-hidden card-hover">
+      <Link to={`/concert/${concert.id}`} className="h-full flex flex-col">
+        <div className="bg-card rounded-lg overflow-hidden card-hover h-full flex flex-col">
           {/* Concert Poster */}
           <div className="relative aspect-[3/4] overflow-hidden">
             <img
@@ -49,15 +49,16 @@ export const ConcertCard = ({ concert, index = 0 }: ConcertCardProps) => {
           </div>
 
           {/* Concert Info */}
-          <div className="p-6">
-            <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-              {concert.name}
-            </h3>
-            <p className="text-muted-foreground text-lg mb-4">
-              {concert.artist}
-            </p>
-            
-            <div className="space-y-2">
+          <div className="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                {concert.name}
+              </h3>
+              <p className="text-muted-foreground text-lg mb-4">
+                {concert.artist}
+              </p>
+            </div>
+            <div className="space-y-2 mt-auto">
               <div className="flex items-center text-muted-foreground">
                 <FiCalendar className="mr-2" size={16} />
                 <span>{formatDate(concert.date)}</span>

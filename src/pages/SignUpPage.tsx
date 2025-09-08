@@ -63,7 +63,13 @@ const SignUpPage = () => {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link to="/" className="text-3xl font-bold text-primary">
-            Sanitizing Sonata
+            <img
+            src="/logo.png"
+            alt="Logo"
+            className="h-10 w-10 object-contain"
+            style={{ display: 'inline-block' }}
+            />
+            <span>Sanitizing Sonata</span>
           </Link>
           <p className="text-muted-foreground mt-2">Join the music revolution</p>
         </div>
