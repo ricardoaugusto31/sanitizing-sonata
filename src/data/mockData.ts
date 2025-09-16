@@ -35,7 +35,7 @@ export const concerts: Concert[] = [
     artist: "AURORA",
     date: "2025-03-15",
     location: "Jakarta Convention Hall",
-    posterImageUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop",
+    posterImageUrl: "https://lh3.googleusercontent.com/jL_2EtZtQB4YNVWkryGymoQOSQmx7VCFkaUu9yc3tyvueYJBUGXqt_CWPCprpnz6I-OL-SXK3--8l3s=w2880-h1200-p-l90-rj",
     isFeatured: true,
     description: "Experience AURORA's ethereal voice and mystical performance in this unforgettable concert. Join us for an evening of dreamy melodies and powerful vocals.",
     venue: "Jakarta Convention Hall - Main Auditorium"
